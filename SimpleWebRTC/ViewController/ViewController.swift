@@ -238,7 +238,7 @@ class ViewController: UIViewController, WebSocketDelegate, WebRTCClientDelegate,
         let sdp = SDP(
                 sdp: sessionDescription.sdp,
                 type: type,
-                sdpMLineIndex: 0,
+                sdpMLineIndex: nil,
                 sdpMid: nil,
                 candidate: nil,
                 userFragment: nil
@@ -264,7 +264,7 @@ class ViewController: UIViewController, WebSocketDelegate, WebRTCClientDelegate,
         let candidate = SDP(
                 sdp: nil,
                 type: nil,
-                sdpMLineIndex: iceCandidate.sdpMLineIndex,
+                sdpMLineIndex: Int(iceCandidate.sdpMLineIndex),
                 sdpMid: iceCandidate.sdpMid,
                 candidate: iceCandidate.sdp,
                 userFragment: nil
@@ -307,22 +307,23 @@ extension ViewController {
         print("CurrentLog - websocketDidReceiveMessage - \(text) - \(socket)")
         
         do{
-            let signalingMessage = try JSONDecoder().decode(SignalingMessage.self, from: text.data(using: .utf8)!)
+            let signalingClient = try JSONDecoder().decode(SignalingClient.self, from: text.data(using: .utf8)!)
+            let signalingMessage = signalingClient.text
 
-            if signalingMessage.message_type == "CANDIDATE",
-               let content = signalingMessage.content {
+            if signalingMessage?.message_type == "CANDIDATE",
+               let content = signalingMessage?.content {
                 print("CurrentLog - candidate")
-                webRTCClient.receiveCandidate(candidate: RTCIceCandidate(sdp: content.candidate ?? "", sdpMLineIndex: content.sdpMLineIndex, sdpMid: content.sdpMid))
-            } else if signalingMessage.message_type == "SDP",
-                   let content = signalingMessage.content {
+                webRTCClient.receiveCandidate(candidate: RTCIceCandidate(sdp: content.candidate ?? "", sdpMLineIndex: Int32(content.sdpMLineIndex ?? 0), sdpMid: content.sdpMid))
+            } else if signalingMessage?.message_type == "SDP",
+                   let content = signalingMessage?.content {
                 if content.type == "offer" {
                     print("CurrentLog - offer")
-                    webRTCClient.receiveOffer(offerSDP: RTCSessionDescription(type: .offer, sdp: (signalingMessage.content?.sdp)!), onCreateAnswer: {(answerSDP: RTCSessionDescription) -> Void in
+                    webRTCClient.receiveOffer(offerSDP: RTCSessionDescription(type: .offer, sdp: (content.sdp)!), onCreateAnswer: {(answerSDP: RTCSessionDescription) -> Void in
                         self.sendSDP(sessionDescription: answerSDP)
                     })
                 } else  if content.type == "answer" {
                     print("CurrentLog - answer")
-                    webRTCClient.receiveAnswer(answerSDP: RTCSessionDescription(type: .answer, sdp: (signalingMessage.content?.sdp)!))
+                    webRTCClient.receiveAnswer(answerSDP: RTCSessionDescription(type: .answer, sdp: (content.sdp)!))
                 }
             }
         }catch{
