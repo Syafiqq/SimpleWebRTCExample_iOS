@@ -235,8 +235,19 @@ class ViewController: UIViewController, WebSocketDelegate, WebRTCClientDelegate,
             type = "answer"
         }
         
-        let sdp = SDP.init(sdp: sessionDescription.sdp)
-        let signalingMessage = SignalingMessage.init(type: type, sessionDescription: sdp, candidate: nil)
+        let sdp = SDP(
+                sdp: sessionDescription.sdp,
+                type: type,
+                sdpMLineIndex: 0,
+                sdpMid: nil,
+                candidate: nil,
+                userFragment: nil
+        )
+        let signalingMessage = SignalingMessage(
+                message_type: "SDP",
+                content: sdp,
+                code:code
+        )
         do {
             let data = try JSONEncoder().encode(signalingMessage)
             let message = String(data: data, encoding: String.Encoding.utf8)!
