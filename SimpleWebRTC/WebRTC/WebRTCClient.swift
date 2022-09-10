@@ -219,11 +219,7 @@ class WebRTCClient: NSObject, RTCPeerConnectionDelegate, RTCVideoViewDelegate, R
     private func setupPeerConnection() -> RTCPeerConnection{
         let rtcConf = RTCConfiguration()
         rtcConf.iceServers = [RTCIceServer(urlStrings: [
-            "stun:stun.l.google.com:19302",
-            "stun:stun1.l.google.com:19302",
-            "stun:stun2.l.google.com:19302",
-            "stun:stun3.l.google.com:19302",
-            "stun:stun4.l.google.com:19302"
+            "stun:stun.l.google.com:19302"
         ])]
         let mediaConstraints = RTCMediaConstraints.init(mandatoryConstraints: nil, optionalConstraints: nil)
         let pc = self.peerConnectionFactory.peerConnection(with: rtcConf, constraints: mediaConstraints, delegate: nil)
@@ -396,7 +392,7 @@ class WebRTCClient: NSObject, RTCPeerConnectionDelegate, RTCVideoViewDelegate, R
             print("CurrentLog - --- on dis connected ---")
             self.peerConnection!.close()
             self.peerConnection = nil
-            self.remoteRenderView?.isHidden = true
+            self.remoteRenderView?.isHidden = false
             self.dataChannel = nil
             self.delegate?.didDisconnectWebRTC()
         }
