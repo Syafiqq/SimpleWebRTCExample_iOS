@@ -50,6 +50,7 @@ class ViewController: UIViewController, WebSocketDelegate, WebRTCClientDelegate,
     var webRTCMessageLabel: UILabel!
     var likeImage: UIImage!
     var likeImageViewRect: CGRect!
+    var code: String = ""
     
     //MARK: - ViewController Override Methods
     override func viewDidLoad() {
@@ -177,6 +178,7 @@ class ViewController: UIViewController, WebSocketDelegate, WebRTCClientDelegate,
     // MARK: - UI Events
     @objc func callButtonTapped(_ sender: UIButton){
         if !webRTCClient.isConnected {
+            code = randomString(length: 10)
             webRTCClient.connect(onSuccess: { (offerSDP: RTCSessionDescription) -> Void in
                 self.sendSDP(sessionDescription: offerSDP)
             })
@@ -375,4 +377,9 @@ extension ViewController {
             //            self.webRTCClient.captureCurrentFrame(sampleBuffer: buffer)
         }
     }
+}
+
+func randomString(length: Int) -> String {
+    let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    return String((0..<length).map{ _ in letters.randomElement()! })
 }
