@@ -35,17 +35,22 @@ struct Candidate: Codable {
 }
 */
 
+struct SignalingClient: Codable {
+    var client: Int?
+    var text: SignalingMessage?
+}
+
 struct SignalingMessage: Codable {
-    let message_type: String?
-    let content: SDP?
-    let code: String?
+    var message_type: String?
+    var content: SDP?
+    var code: String?
 }
 
 struct SDP: Codable {
-    let sdp: String?
-    let type: String?
-    let sdpMLineIndex: Int32
-    let sdpMid: String?
-    let candidate: String?
-    let userFragment: String?
+    var sdp: String?
+    var type: String?
+    var sdpMLineIndex: Int?
+    var sdpMid: String?
+    var candidate: String?
+    var userFragment: String?
 }
