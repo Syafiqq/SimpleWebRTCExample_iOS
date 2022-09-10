@@ -280,6 +280,7 @@ extension ViewController {
     }
     
     func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
+        print("CurrentLog - websocketDidReceiveMessage - \(text) - \(socket)")
         
         do{
             let signalingMessage = try JSONDecoder().decode(SignalingMessage.self, from: text.data(using: .utf8)!)
