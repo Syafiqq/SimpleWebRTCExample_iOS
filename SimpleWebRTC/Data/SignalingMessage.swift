@@ -19,7 +19,7 @@ import Foundation
 //}
 
 struct SignalingMessage: Codable {
-    let type: String
+    let type: String?
     let sessionDescription: SDP?
     let candidate: Candidate?
 }

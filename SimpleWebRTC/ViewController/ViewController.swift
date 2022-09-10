@@ -71,10 +71,12 @@ class ViewController: UIViewController, WebSocketDelegate, WebRTCClientDelegate,
             
             self.cameraFilter = CameraFilter()
         }
-        
-        socket = WebSocket(url: URL(string: "ws://" + ipAddress + ":8080/")!)
+
+        // socket = WebSocket(url: URL(string: "ws://" + ipAddress + ":8080/")!)
+        // socket = WebSocket(url: URL(string: "ws://webrtc.staging.geniebook.dev:8080/")!)
+        socket = WebSocket(url: URL(string: "wss://stream-vm.dev.geniebook.dev:444/webrtc-session.json")!)
         socket.delegate = self
-        
+
         tryToConnectWebSocket = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { (timer) in
             if self.webRTCClient.isConnected || self.socket.isConnected {
                 return
