@@ -308,16 +308,22 @@ extension ViewController {
         
         do{
             let signalingMessage = try JSONDecoder().decode(SignalingMessage.self, from: text.data(using: .utf8)!)
-            
-            if signalingMessage.type == "offer" {
-                webRTCClient.receiveOffer(offerSDP: RTCSessionDescription(type: .offer, sdp: (signalingMessage.sessionDescription?.sdp)!), onCreateAnswer: {(answerSDP: RTCSessionDescription) -> Void in
-                    self.sendSDP(sessionDescription: answerSDP)
-                })
-            }else if signalingMessage.type == "answer" {
-                webRTCClient.receiveAnswer(answerSDP: RTCSessionDescription(type: .answer, sdp: (signalingMessage.sessionDescription?.sdp)!))
-            }else if signalingMessage.type == "candidate" {
-                let candidate = signalingMessage.candidate!
-                webRTCClient.receiveCandidate(candidate: RTCIceCandidate(sdp: candidate.sdp, sdpMLineIndex: candidate.sdpMLineIndex, sdpMid: candidate.sdpMid))
+
+            if signalingMessage.message_type == "CANDIDATE",
+               let content = signalingMessage.content {
+                print("CurrentLog - candidate")
+                webRTCClient.receiveCandidate(candidate: RTCIceCandidate(sdp: content.candidate ?? "", sdpMLineIndex: content.sdpMLineIndex, sdpMid: content.sdpMid))
+            } else if signalingMessage.message_type == "SDP",
+                   let content = signalingMessage.content {
+                if content.type == "offer" {
+                    print("CurrentLog - offer")
+                    webRTCClient.receiveOffer(offerSDP: RTCSessionDescription(type: .offer, sdp: (signalingMessage.content?.sdp)!), onCreateAnswer: {(answerSDP: RTCSessionDescription) -> Void in
+                        self.sendSDP(sessionDescription: answerSDP)
+                    })
+                } else  if content.type == "answer" {
+                    print("CurrentLog - answer")
+                    webRTCClient.receiveAnswer(answerSDP: RTCSessionDescription(type: .answer, sdp: (signalingMessage.content?.sdp)!))
+                }
             }
         }catch{
             print(error)
