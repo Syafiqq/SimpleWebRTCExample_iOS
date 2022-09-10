@@ -17,7 +17,7 @@ import Foundation
 //    let type: String
 //    let candidate: Candidate
 //}
-
+/*
 struct SignalingMessage: Codable {
     let type: String?
     let sessionDescription: SDP?
@@ -32,4 +32,20 @@ struct Candidate: Codable {
     let sdp: String
     let sdpMLineIndex: Int32
     let sdpMid: String
+}
+*/
+
+struct SignalingMessage: Codable {
+    let message_type: String?
+    let content: SDP?
+    let code: String?
+}
+
+struct SDP: Codable {
+    let sdp: String?
+    let type: String?
+    let sdpMLineIndex: Int32
+    let sdpMid: String?
+    let candidate: String?
+    let userFragment: String?
 }
