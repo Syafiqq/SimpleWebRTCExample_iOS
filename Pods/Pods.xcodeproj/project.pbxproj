@@ -6,60 +6,41 @@
 	objectVersion = 51;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		EC23BFCFC44D9224C054485B54824B8E /* GoogleWebRTC */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 18B664D4DBF22B3F6B271154516833C2 /* Build configuration list for PBXAggregateTarget "GoogleWebRTC" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = GoogleWebRTC;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		068E5963381B58D7D8CD321462F567ED /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD552CA75BCAA07EAD0D0393C7724F09 /* Compression.swift */; };
-		133CC62777F30CCEE07ADDADF0C0B2F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		1627E6FA0453D6DB472BA444F1D32AE7 /* SSLClientCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AB40553E61BECCD81DCE1C4AC99F1 /* SSLClientCertificate.swift */; };
-		197E581C5CDBAA5F99FB2D6B9680FA37 /* Pods-SimpleWebRTCUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 786D510925FE7292B7E9F3D5B2BE999B /* Pods-SimpleWebRTCUITests-dummy.m */; };
-		294D61E8A195B6A1F6AEDCF0F73599A5 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EFCE79762702015758F36E3A538F3 /* Starscream-dummy.m */; };
-		3640648588ABDD181E636E9B17FEA746 /* Pods-SimpleWebRTCTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CEBC4C61425D9EC7CA4D9B4F5F5642E /* Pods-SimpleWebRTCTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57E69F345755B5D4005282BD2D43A8EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		8B3350D96B15B975184C8EE0819F9623 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FED3F8A9F82418989DD2E7EEBD9A1B0 /* SSLSecurity.swift */; };
-		942D48138C84B391669185EB08473686 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		96D67F9A7630A34944B6EAAD47F785E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		B02384292B2B958827FE7E41DFEAE15D /* Pods-SimpleWebRTCTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D760EB1998099F40D5B33868F60F382D /* Pods-SimpleWebRTCTests-dummy.m */; };
-		B4A6283FDFA04E3A7B6FD0C13B6FEF32 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D4256E59103F507298797D5780B4888 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C02D9FEB295BDA1359D2F52C80F8E75A /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B4ACCAD50EB7B80B59059B86AEFDA1 /* WebSocket.swift */; };
-		D607A266B84C73526E1A29AA008780FD /* Pods-SimpleWebRTCUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 860D29F86BDB297C9B052F4297F79059 /* Pods-SimpleWebRTCUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8386F300B102DFF9C7B02F873FB27B9 /* Pods-SimpleWebRTC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91508DB05AE2BC49A21CDCE837191C09 /* Pods-SimpleWebRTC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F938F8FF30A346EF618949E1929B2482 /* Pods-SimpleWebRTC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E75F57F3EF3EF180D9F822E27AA86B /* Pods-SimpleWebRTC-dummy.m */; };
+		073188F463401C3F3A0848E8864D2A21 /* Pods-SimpleWebRTCTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D760EB1998099F40D5B33868F60F382D /* Pods-SimpleWebRTCTests-dummy.m */; };
+		2318B70F6CB59888B879349F92DE450D /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A53698F1D065DB33E81AB27CAAC02A /* WebSocket.swift */; };
+		2831F2256423B98B1616FFB257F1B307 /* Pods-SimpleWebRTC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E75F57F3EF3EF180D9F822E27AA86B /* Pods-SimpleWebRTC-dummy.m */; };
+		30D7F3772753901FA1F7D7920C163359 /* Pods-SimpleWebRTCUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 786D510925FE7292B7E9F3D5B2BE999B /* Pods-SimpleWebRTCUITests-dummy.m */; };
+		3744E502782192EA106AF498FEDB67B9 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734469CD9655D7C38786710ED18F3D6B /* Compression.swift */; };
+		3D49CF7C0C08DC2B800954A4A5107713 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3EE52230CFCB0F1CB1CE33C22E4FFA59 /* Pods-SimpleWebRTC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91508DB05AE2BC49A21CDCE837191C09 /* Pods-SimpleWebRTC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41CD4D248A99A2FC837BBC73988FF37E /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D9C839438B1BC7D9DC70F5786B7A79 /* SSLSecurity.swift */; };
+		42C2AC2D57ED5D75287DAFEB2397AEC2 /* Pods-SimpleWebRTCUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 860D29F86BDB297C9B052F4297F79059 /* Pods-SimpleWebRTCUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56424C2C9CD0BC9AD2E7ACC7E94CC8B1 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 224B8A4E0612334207A2B350C859D2D4 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A34605EDA9C0B45A4E5008A271FD66BF /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CD3B886D6D8805A735BDEF3BDCF0BA /* Starscream-dummy.m */; };
+		BC6C8269E43B6613017D260094FD9D7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C87F2BF1D38BA1C67AD5DB10066B9226 /* Pods-SimpleWebRTCTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CEBC4C61425D9EC7CA4D9B4F5F5642E /* Pods-SimpleWebRTCTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC3F116608C7363FA8F324825531DBAF /* SSLClientCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD425D2B58528B26427B72C1648FA8 /* SSLClientCertificate.swift */; };
+		DE7C2CCF922FAB3C23025C6A2A9CA9C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EAE36B169874CBCA6F497D4A8B6B2E9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		11F2763249CE7598EA827E6F0A3E2841 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EC23BFCFC44D9224C054485B54824B8E;
-			remoteInfo = GoogleWebRTC;
-		};
-		6D5C536BB9DB8B536BAAD0F4EC0ABEE3 /* PBXContainerItemProxy */ = {
+		2315AE7BBFB3D1E7F7F5071AFDA1FCDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
 			remoteInfo = Starscream;
 		};
-		A5D957FA8E1054F5A042E21054FF182A /* PBXContainerItemProxy */ = {
+		2E83B671672B1ED9EE3F403AA9260BB8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F7F1371E87E8F9E8A9564CD48E543888;
 			remoteInfo = "Pods-SimpleWebRTC";
 		};
-		DF11A569E39DC891615AD1419106A55E /* PBXContainerItemProxy */ = {
+		A68EA7B1E78153A54AE9E7E83101B183 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -70,108 +51,103 @@
 
 /* Begin PBXFileReference section */
 		01FF7EBB9A805B098B9233AEB042BB92 /* Pods-SimpleWebRTCTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleWebRTCTests-Info.plist"; sourceTree = "<group>"; };
-		02020C8260195B43F3E700A7DD494FDF /* Pods_SimpleWebRTCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SimpleWebRTCTests.framework; path = "Pods-SimpleWebRTCTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		075B5D35F43660B6BFB631C2578AB434 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		02020C8260195B43F3E700A7DD494FDF /* Pods-SimpleWebRTCTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SimpleWebRTCTests"; path = Pods_SimpleWebRTCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DD3775D36416DAA783AEA44EF5341C6 /* Pods-SimpleWebRTCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleWebRTCTests.debug.xcconfig"; sourceTree = "<group>"; };
-		13F16EDA5D467A7F395C6652FEA0763E /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
-		2809E138EF5AF849703212A8F3A0207C /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = Frameworks/frameworks/WebRTC.framework; sourceTree = "<group>"; };
+		224B8A4E0612334207A2B350C859D2D4 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		22A53698F1D065DB33E81AB27CAAC02A /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
 		291D7B451BF0109A31B9AE3F92AE6CB8 /* Pods-SimpleWebRTCTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SimpleWebRTCTests.modulemap"; sourceTree = "<group>"; };
-		2C7AB40553E61BECCD81DCE1C4AC99F1 /* SSLClientCertificate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLClientCertificate.swift; path = Sources/Starscream/SSLClientCertificate.swift; sourceTree = "<group>"; };
 		3188B2A39F0183B7499A744735975B66 /* Pods-SimpleWebRTCUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleWebRTCUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		31E75F57F3EF3EF180D9F822E27AA86B /* Pods-SimpleWebRTC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleWebRTC-dummy.m"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		337D0CE682AD65F4594FFE97C6B16974 /* Pods-SimpleWebRTC-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleWebRTC-frameworks.sh"; sourceTree = "<group>"; };
 		342C601E24D883DCD9755D9A41CC6068 /* Pods-SimpleWebRTCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleWebRTCTests.release.xcconfig"; sourceTree = "<group>"; };
 		3C151561DF7692C3FE99185687783348 /* Pods-SimpleWebRTC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleWebRTC-Info.plist"; sourceTree = "<group>"; };
-		498AE9F2E06292E4E930A78020E149B3 /* GoogleWebRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleWebRTC.release.xcconfig; sourceTree = "<group>"; };
 		4F6D6A8D7EB22964C235C9E106061B2F /* Pods-SimpleWebRTCUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SimpleWebRTCUITests.modulemap"; sourceTree = "<group>"; };
-		5A6EFCE79762702015758F36E3A538F3 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
-		68B12DD9617A4D3470F98387AE60C145 /* GoogleWebRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleWebRTC.debug.xcconfig; sourceTree = "<group>"; };
+		5D5E240C51338D03C83A9EF0676C3AFD /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
 		6951F9CC4BF80258A4E9D2F6A52E7C3C /* Pods-SimpleWebRTCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleWebRTCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6A0B7D439B81AAF110C14562A8D7CE1A /* Starscream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.debug.xcconfig; sourceTree = "<group>"; };
 		6CEBC4C61425D9EC7CA4D9B4F5F5642E /* Pods-SimpleWebRTCTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleWebRTCTests-umbrella.h"; sourceTree = "<group>"; };
+		6DBD425D2B58528B26427B72C1648FA8 /* SSLClientCertificate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLClientCertificate.swift; path = Sources/Starscream/SSLClientCertificate.swift; sourceTree = "<group>"; };
 		71FB4A6C58424143DC761F5548B3DBF2 /* Pods-SimpleWebRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleWebRTC.debug.xcconfig"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		734469CD9655D7C38786710ED18F3D6B /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Starscream/Compression.swift; sourceTree = "<group>"; };
 		786D510925FE7292B7E9F3D5B2BE999B /* Pods-SimpleWebRTCUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleWebRTCUITests-dummy.m"; sourceTree = "<group>"; };
-		7FED3F8A9F82418989DD2E7EEBD9A1B0 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/Starscream/SSLSecurity.swift; sourceTree = "<group>"; };
 		822AEB663812D86A4F0DF9F2206F377D /* Pods-SimpleWebRTCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleWebRTCUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		82E61EBBB7551DBA03BBCE78057C85F4 /* Pods_SimpleWebRTC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SimpleWebRTC.framework; path = "Pods-SimpleWebRTC.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82E61EBBB7551DBA03BBCE78057C85F4 /* Pods-SimpleWebRTC */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SimpleWebRTC"; path = Pods_SimpleWebRTC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		860D29F86BDB297C9B052F4297F79059 /* Pods-SimpleWebRTCUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleWebRTCUITests-umbrella.h"; sourceTree = "<group>"; };
-		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D4256E59103F507298797D5780B4888 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		891B2270823847ED23F2ECFC28F935EC /* Starscream */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91508DB05AE2BC49A21CDCE837191C09 /* Pods-SimpleWebRTC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleWebRTC-umbrella.h"; sourceTree = "<group>"; };
 		94AB0F214BCA26D42B117EAEEE1F8091 /* Pods-SimpleWebRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleWebRTC.release.xcconfig"; sourceTree = "<group>"; };
-		9C21482C7F9152BBAE84D943AA66745A /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2D9C839438B1BC7D9DC70F5786B7A79 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/Starscream/SSLSecurity.swift; sourceTree = "<group>"; };
 		AD5691376D1F2462D0CBFEDC171AD7BD /* Pods-SimpleWebRTCTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleWebRTCTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B2EFA901FAA8ED4F45DDAD886684DAE6 /* Starscream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.debug.xcconfig; sourceTree = "<group>"; };
 		B7912E0F3243795BE770935AFAD93227 /* Pods-SimpleWebRTC-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleWebRTC-acknowledgements.plist"; sourceTree = "<group>"; };
 		B9BF16E904A1549F6A809757F7C4D5A4 /* Pods-SimpleWebRTCUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleWebRTCUITests-Info.plist"; sourceTree = "<group>"; };
-		BED1E1C302159BF85645B14EB9EF99F1 /* Starscream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.release.xcconfig; sourceTree = "<group>"; };
 		C373C0C3C1F7D1361879EB47F7E4165D /* Pods-SimpleWebRTCTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleWebRTCTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C52A6781F09BBD80CC5E15D4E2093A97 /* Pods-SimpleWebRTCUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleWebRTCUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D4AA0E3CD4A50DFB82FB9B64E4D1CEEA /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
 		D760EB1998099F40D5B33868F60F382D /* Pods-SimpleWebRTCTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleWebRTCTests-dummy.m"; sourceTree = "<group>"; };
-		DD552CA75BCAA07EAD0D0393C7724F09 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Starscream/Compression.swift; sourceTree = "<group>"; };
-		E27519819A72BE1B41736CCEB457DDA9 /* Pods_SimpleWebRTCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SimpleWebRTCUITests.framework; path = "Pods-SimpleWebRTCUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9B4ACCAD50EB7B80B59059B86AEFDA1 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
+		E27519819A72BE1B41736CCEB457DDA9 /* Pods-SimpleWebRTCUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SimpleWebRTCUITests"; path = Pods_SimpleWebRTCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63A7F2D8B4DA51D2907CBD374D6EF7C /* Starscream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.release.xcconfig; sourceTree = "<group>"; };
+		E7CD3B886D6D8805A735BDEF3BDCF0BA /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
 		ED63BAA48F9621E418597615666DFC63 /* Pods-SimpleWebRTC-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleWebRTC-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F639798900C02A52DB81BC2169DA9ED5 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
 		FC508DBF5008D76F9CEE241790E67716 /* Pods-SimpleWebRTC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SimpleWebRTC.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		09206235EB9393FD6D895453F2569AF9 /* Frameworks */ = {
+		8260DE60B8DED1A4AA640F702FD697E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96D67F9A7630A34944B6EAAD47F785E3 /* Foundation.framework in Frameworks */,
+				BC6C8269E43B6613017D260094FD9D7E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		72C06F5F1FAE0C9C83FD59F71001DB76 /* Frameworks */ = {
+		A45952DFFD6B36A8C218F4A41C2C44D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				942D48138C84B391669185EB08473686 /* Foundation.framework in Frameworks */,
+				3D49CF7C0C08DC2B800954A4A5107713 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEA89C3C7E5D563AB5207556A424BDAC /* Frameworks */ = {
+		B2E89E91C3A3B5E9BD157AA75C7CEDA0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				133CC62777F30CCEE07ADDADF0C0B2F6 /* Foundation.framework in Frameworks */,
+				DE7C2CCF922FAB3C23025C6A2A9CA9C3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C091345AB5AF30922CE3EB75D8128B1C /* Frameworks */ = {
+		E7E3F8390AB5C3382669377B65C5F561 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57E69F345755B5D4005282BD2D43A8EA /* Foundation.framework in Frameworks */,
+				EAE36B169874CBCA6F497D4A8B6B2E9D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		417C97D5574857DA0BB0CC5696848F96 /* GoogleWebRTC */ = {
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				EB534B2D6852167524310E009EC19C01 /* Frameworks */,
-				9BE8131E0A2FDEA6E1810A3E8F75AB22 /* Support Files */,
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
-			name = GoogleWebRTC;
-			path = GoogleWebRTC;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		5392417FF0756A15BC968CD7565F4221 /* Support Files */ = {
+		7022F56D3C22E8CAE58845194650BA35 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				075B5D35F43660B6BFB631C2578AB434 /* Starscream.modulemap */,
-				5A6EFCE79762702015758F36E3A538F3 /* Starscream-dummy.m */,
-				9C21482C7F9152BBAE84D943AA66745A /* Starscream-Info.plist */,
-				13F16EDA5D467A7F395C6652FEA0763E /* Starscream-prefix.pch */,
-				8D4256E59103F507298797D5780B4888 /* Starscream-umbrella.h */,
-				B2EFA901FAA8ED4F45DDAD886684DAE6 /* Starscream.debug.xcconfig */,
-				BED1E1C302159BF85645B14EB9EF99F1 /* Starscream.release.xcconfig */,
+				F639798900C02A52DB81BC2169DA9ED5 /* Starscream.modulemap */,
+				E7CD3B886D6D8805A735BDEF3BDCF0BA /* Starscream-dummy.m */,
+				5D5E240C51338D03C83A9EF0676C3AFD /* Starscream-Info.plist */,
+				D4AA0E3CD4A50DFB82FB9B64E4D1CEEA /* Starscream-prefix.pch */,
+				224B8A4E0612334207A2B350C859D2D4 /* Starscream-umbrella.h */,
+				6A0B7D439B81AAF110C14562A8D7CE1A /* Starscream.debug.xcconfig */,
+				E63A7F2D8B4DA51D2907CBD374D6EF7C /* Starscream.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Starscream";
@@ -187,55 +163,23 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		991C9C2FC388E65D9DE228739268AADB /* Products */ = {
+		97C5288770E1953BDB40F8F908E40D46 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				82E61EBBB7551DBA03BBCE78057C85F4 /* Pods_SimpleWebRTC.framework */,
-				02020C8260195B43F3E700A7DD494FDF /* Pods_SimpleWebRTCTests.framework */,
-				E27519819A72BE1B41736CCEB457DDA9 /* Pods_SimpleWebRTCUITests.framework */,
-				891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9BE8131E0A2FDEA6E1810A3E8F75AB22 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				68B12DD9617A4D3470F98387AE60C145 /* GoogleWebRTC.debug.xcconfig */,
-				498AE9F2E06292E4E930A78020E149B3 /* GoogleWebRTC.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GoogleWebRTC";
-			sourceTree = "<group>";
-		};
-		B2DD70B2AE815391D93C0DE65C99F24A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				417C97D5574857DA0BB0CC5696848F96 /* GoogleWebRTC */,
-				C6E6F9053FE337FA5E409277569F50C7 /* Starscream */,
+				F5209523CD23E3706A7BB516D14FA299 /* Starscream */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		AEA01A0734F6DAD20E1F6A2C3EF007F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				82E61EBBB7551DBA03BBCE78057C85F4 /* Pods-SimpleWebRTC */,
+				02020C8260195B43F3E700A7DD494FDF /* Pods-SimpleWebRTCTests */,
+				E27519819A72BE1B41736CCEB457DDA9 /* Pods-SimpleWebRTCUITests */,
+				891B2270823847ED23F2ECFC28F935EC /* Starscream */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		C6E6F9053FE337FA5E409277569F50C7 /* Starscream */ = {
-			isa = PBXGroup;
-			children = (
-				DD552CA75BCAA07EAD0D0393C7724F09 /* Compression.swift */,
-				2C7AB40553E61BECCD81DCE1C4AC99F1 /* SSLClientCertificate.swift */,
-				7FED3F8A9F82418989DD2E7EEBD9A1B0 /* SSLSecurity.swift */,
-				E9B4ACCAD50EB7B80B59059B86AEFDA1 /* WebSocket.swift */,
-				5392417FF0756A15BC968CD7565F4221 /* Support Files */,
-			);
-			name = Starscream;
-			path = Starscream;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -243,8 +187,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				B2DD70B2AE815391D93C0DE65C99F24A /* Pods */,
-				991C9C2FC388E65D9DE228739268AADB /* Products */,
+				97C5288770E1953BDB40F8F908E40D46 /* Pods */,
+				AEA01A0734F6DAD20E1F6A2C3EF007F2 /* Products */,
 				86D750CE05705507A2F2DE6DB57B8E87 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -252,7 +196,7 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -271,14 +215,6 @@
 			);
 			name = "Pods-SimpleWebRTCTests";
 			path = "Target Support Files/Pods-SimpleWebRTCTests";
-			sourceTree = "<group>";
-		};
-		EB534B2D6852167524310E009EC19C01 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2809E138EF5AF849703212A8F3A0207C /* WebRTC.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F405717AC1E341E175F556897A705F62 /* Pods-SimpleWebRTC */ = {
@@ -314,38 +250,51 @@
 			path = "Target Support Files/Pods-SimpleWebRTCUITests";
 			sourceTree = "<group>";
 		};
+		F5209523CD23E3706A7BB516D14FA299 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				734469CD9655D7C38786710ED18F3D6B /* Compression.swift */,
+				6DBD425D2B58528B26427B72C1648FA8 /* SSLClientCertificate.swift */,
+				A2D9C839438B1BC7D9DC70F5786B7A79 /* SSLSecurity.swift */,
+				22A53698F1D065DB33E81AB27CAAC02A /* WebSocket.swift */,
+				7022F56D3C22E8CAE58845194650BA35 /* Support Files */,
+			);
+			name = Starscream;
+			path = Starscream;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4366D55F60AE5AB991A89E801487CFC3 /* Headers */ = {
+		0CABD434215470CF9FC65C8D206CE5C2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3640648588ABDD181E636E9B17FEA746 /* Pods-SimpleWebRTCTests-umbrella.h in Headers */,
+				56424C2C9CD0BC9AD2E7ACC7E94CC8B1 /* Starscream-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		524CB5ED55A2246CBEB477F831073CDB /* Headers */ = {
+		593796842C67CD64A1E3B09F88894641 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D607A266B84C73526E1A29AA008780FD /* Pods-SimpleWebRTCUITests-umbrella.h in Headers */,
+				C87F2BF1D38BA1C67AD5DB10066B9226 /* Pods-SimpleWebRTCTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ABD37AF9B9F78580D159AE761C456202 /* Headers */ = {
+		A1E6A6310F000AE7EEE1184240FEC013 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4A6283FDFA04E3A7B6FD0C13B6FEF32 /* Starscream-umbrella.h in Headers */,
+				42C2AC2D57ED5D75287DAFEB2397AEC2 /* Pods-SimpleWebRTCUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D132A829AC80B41860216221FA7033FD /* Headers */ = {
+		EE1D897E0205FCB44357B267F9F23369 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8386F300B102DFF9C7B02F873FB27B9 /* Pods-SimpleWebRTC-umbrella.h in Headers */,
+				3EE52230CFCB0F1CB1CE33C22E4FFA59 /* Pods-SimpleWebRTC-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,50 +303,50 @@
 /* Begin PBXNativeTarget section */
 		2268F56CE3E7CEDB3AD0B95FE8831EE7 /* Pods-SimpleWebRTCUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1862D0FEBE7B3437A2B0337575D850BD /* Build configuration list for PBXNativeTarget "Pods-SimpleWebRTCUITests" */;
+			buildConfigurationList = A4B1815336F5C1B1985EA8B28DEAF1E4 /* Build configuration list for PBXNativeTarget "Pods-SimpleWebRTCUITests" */;
 			buildPhases = (
-				524CB5ED55A2246CBEB477F831073CDB /* Headers */,
-				7B759E5344E27C9C45E3100E5660D734 /* Sources */,
-				C091345AB5AF30922CE3EB75D8128B1C /* Frameworks */,
-				7E491D3E8B6AB33A14CB6F5D827FBD5A /* Resources */,
+				A1E6A6310F000AE7EEE1184240FEC013 /* Headers */,
+				9D4024ECD5353D16F940C2AB66B49B46 /* Sources */,
+				B2E89E91C3A3B5E9BD157AA75C7CEDA0 /* Frameworks */,
+				336A0ECC61599657C717874C3265F3EC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				44440E5234053D41ADD88222B458C8A8 /* PBXTargetDependency */,
+				00CA3F08EBC72D19494933BFE1B3418C /* PBXTargetDependency */,
 			);
 			name = "Pods-SimpleWebRTCUITests";
-			productName = "Pods-SimpleWebRTCUITests";
-			productReference = E27519819A72BE1B41736CCEB457DDA9 /* Pods_SimpleWebRTCUITests.framework */;
+			productName = Pods_SimpleWebRTCUITests;
+			productReference = E27519819A72BE1B41736CCEB457DDA9 /* Pods-SimpleWebRTCUITests */;
 			productType = "com.apple.product-type.framework";
 		};
 		936F9FF249DCB05983637030D17CE025 /* Pods-SimpleWebRTCTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5ACF19E04FC59006BC686ED88AFE864F /* Build configuration list for PBXNativeTarget "Pods-SimpleWebRTCTests" */;
+			buildConfigurationList = 2E0E1C4880F01F1C5FA1863E1EFC8C21 /* Build configuration list for PBXNativeTarget "Pods-SimpleWebRTCTests" */;
 			buildPhases = (
-				4366D55F60AE5AB991A89E801487CFC3 /* Headers */,
-				B48BD5F2CD163A64289FE0EDCDC65E6C /* Sources */,
-				BEA89C3C7E5D563AB5207556A424BDAC /* Frameworks */,
-				834BACD6F8CD995D22DBB0C41A19B9EC /* Resources */,
+				593796842C67CD64A1E3B09F88894641 /* Headers */,
+				F5552F1F7A2668901444DEDE7A2E313E /* Sources */,
+				8260DE60B8DED1A4AA640F702FD697E6 /* Frameworks */,
+				D9ABA16393F461CC95E11E3DDF9DAA8F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BC7EE88F4EF642F5A58CD08148CD9586 /* PBXTargetDependency */,
+				F69D7BB3C802A619E22775E702520CF7 /* PBXTargetDependency */,
 			);
 			name = "Pods-SimpleWebRTCTests";
-			productName = "Pods-SimpleWebRTCTests";
-			productReference = 02020C8260195B43F3E700A7DD494FDF /* Pods_SimpleWebRTCTests.framework */;
+			productName = Pods_SimpleWebRTCTests;
+			productReference = 02020C8260195B43F3E700A7DD494FDF /* Pods-SimpleWebRTCTests */;
 			productType = "com.apple.product-type.framework";
 		};
 		9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED5C15C705AB67930733A7E237A0A33A /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildConfigurationList = 14D7B821FD04F6513C0EFC8A1351C0C1 /* Build configuration list for PBXNativeTarget "Starscream" */;
 			buildPhases = (
-				ABD37AF9B9F78580D159AE761C456202 /* Headers */,
-				621EE447A1C117BDCD418F5DE070FD3C /* Sources */,
-				09206235EB9393FD6D895453F2569AF9 /* Frameworks */,
-				BE174469BA3F43D1B5CE60520CA93EB3 /* Resources */,
+				0CABD434215470CF9FC65C8D206CE5C2 /* Headers */,
+				FA9B3B41849F26B72514ABEA7806A3B0 /* Sources */,
+				E7E3F8390AB5C3382669377B65C5F561 /* Frameworks */,
+				AEB48D90B0A78846E9B025489EF4C228 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -405,27 +354,26 @@
 			);
 			name = Starscream;
 			productName = Starscream;
-			productReference = 891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */;
+			productReference = 891B2270823847ED23F2ECFC28F935EC /* Starscream */;
 			productType = "com.apple.product-type.framework";
 		};
 		F7F1371E87E8F9E8A9564CD48E543888 /* Pods-SimpleWebRTC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E080C644BE62EDB427E0591AF7E6FCDF /* Build configuration list for PBXNativeTarget "Pods-SimpleWebRTC" */;
+			buildConfigurationList = DB3D65F08CE495EFE4933C66A020E3B8 /* Build configuration list for PBXNativeTarget "Pods-SimpleWebRTC" */;
 			buildPhases = (
-				D132A829AC80B41860216221FA7033FD /* Headers */,
-				4AD5933537003D173918F441A0EC8289 /* Sources */,
-				72C06F5F1FAE0C9C83FD59F71001DB76 /* Frameworks */,
-				899A17843B03FEA6E7B7CD2DC15A11B9 /* Resources */,
+				EE1D897E0205FCB44357B267F9F23369 /* Headers */,
+				3BC6C8BD879091B189B34CDD21670177 /* Sources */,
+				A45952DFFD6B36A8C218F4A41C2C44D1 /* Frameworks */,
+				0B2CF0E1A8F3A86006CE0491C8EC43F1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0B0CC3720590A8075E3236D322C414AE /* PBXTargetDependency */,
-				1D25A21AAE64F16B421EF782B7D41BF7 /* PBXTargetDependency */,
+				5565EC9B74C2F4AD61C4FB19710DC43A /* PBXTargetDependency */,
 			);
 			name = "Pods-SimpleWebRTC";
-			productName = "Pods-SimpleWebRTC";
-			productReference = 82E61EBBB7551DBA03BBCE78057C85F4 /* Pods_SimpleWebRTC.framework */;
+			productName = Pods_SimpleWebRTC;
+			productReference = 82E61EBBB7551DBA03BBCE78057C85F4 /* Pods-SimpleWebRTC */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -434,23 +382,22 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 991C9C2FC388E65D9DE228739268AADB /* Products */;
+			productRefGroup = AEA01A0734F6DAD20E1F6A2C3EF007F2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EC23BFCFC44D9224C054485B54824B8E /* GoogleWebRTC */,
 				F7F1371E87E8F9E8A9564CD48E543888 /* Pods-SimpleWebRTC */,
 				936F9FF249DCB05983637030D17CE025 /* Pods-SimpleWebRTCTests */,
 				2268F56CE3E7CEDB3AD0B95FE8831EE7 /* Pods-SimpleWebRTCUITests */,
@@ -460,28 +407,28 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7E491D3E8B6AB33A14CB6F5D827FBD5A /* Resources */ = {
+		0B2CF0E1A8F3A86006CE0491C8EC43F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		834BACD6F8CD995D22DBB0C41A19B9EC /* Resources */ = {
+		336A0ECC61599657C717874C3265F3EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		899A17843B03FEA6E7B7CD2DC15A11B9 /* Resources */ = {
+		AEB48D90B0A78846E9B025489EF4C228 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE174469BA3F43D1B5CE60520CA93EB3 /* Resources */ = {
+		D9ABA16393F461CC95E11E3DDF9DAA8F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -491,76 +438,255 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4AD5933537003D173918F441A0EC8289 /* Sources */ = {
+		3BC6C8BD879091B189B34CDD21670177 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F938F8FF30A346EF618949E1929B2482 /* Pods-SimpleWebRTC-dummy.m in Sources */,
+				2831F2256423B98B1616FFB257F1B307 /* Pods-SimpleWebRTC-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		621EE447A1C117BDCD418F5DE070FD3C /* Sources */ = {
+		9D4024ECD5353D16F940C2AB66B49B46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				068E5963381B58D7D8CD321462F567ED /* Compression.swift in Sources */,
-				1627E6FA0453D6DB472BA444F1D32AE7 /* SSLClientCertificate.swift in Sources */,
-				8B3350D96B15B975184C8EE0819F9623 /* SSLSecurity.swift in Sources */,
-				294D61E8A195B6A1F6AEDCF0F73599A5 /* Starscream-dummy.m in Sources */,
-				C02D9FEB295BDA1359D2F52C80F8E75A /* WebSocket.swift in Sources */,
+				30D7F3772753901FA1F7D7920C163359 /* Pods-SimpleWebRTCUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B759E5344E27C9C45E3100E5660D734 /* Sources */ = {
+		F5552F1F7A2668901444DEDE7A2E313E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				197E581C5CDBAA5F99FB2D6B9680FA37 /* Pods-SimpleWebRTCUITests-dummy.m in Sources */,
+				073188F463401C3F3A0848E8864D2A21 /* Pods-SimpleWebRTCTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B48BD5F2CD163A64289FE0EDCDC65E6C /* Sources */ = {
+		FA9B3B41849F26B72514ABEA7806A3B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B02384292B2B958827FE7E41DFEAE15D /* Pods-SimpleWebRTCTests-dummy.m in Sources */,
+				3744E502782192EA106AF498FEDB67B9 /* Compression.swift in Sources */,
+				DC3F116608C7363FA8F324825531DBAF /* SSLClientCertificate.swift in Sources */,
+				41CD4D248A99A2FC837BBC73988FF37E /* SSLSecurity.swift in Sources */,
+				A34605EDA9C0B45A4E5008A271FD66BF /* Starscream-dummy.m in Sources */,
+				2318B70F6CB59888B879349F92DE450D /* WebSocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0B0CC3720590A8075E3236D322C414AE /* PBXTargetDependency */ = {
+		00CA3F08EBC72D19494933BFE1B3418C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = GoogleWebRTC;
-			target = EC23BFCFC44D9224C054485B54824B8E /* GoogleWebRTC */;
-			targetProxy = 11F2763249CE7598EA827E6F0A3E2841 /* PBXContainerItemProxy */;
+			name = "Pods-SimpleWebRTC";
+			target = F7F1371E87E8F9E8A9564CD48E543888 /* Pods-SimpleWebRTC */;
+			targetProxy = A68EA7B1E78153A54AE9E7E83101B183 /* PBXContainerItemProxy */;
 		};
-		1D25A21AAE64F16B421EF782B7D41BF7 /* PBXTargetDependency */ = {
+		5565EC9B74C2F4AD61C4FB19710DC43A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Starscream;
 			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
-			targetProxy = 6D5C536BB9DB8B536BAAD0F4EC0ABEE3 /* PBXContainerItemProxy */;
+			targetProxy = 2315AE7BBFB3D1E7F7F5071AFDA1FCDC /* PBXContainerItemProxy */;
 		};
-		44440E5234053D41ADD88222B458C8A8 /* PBXTargetDependency */ = {
+		F69D7BB3C802A619E22775E702520CF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-SimpleWebRTC";
 			target = F7F1371E87E8F9E8A9564CD48E543888 /* Pods-SimpleWebRTC */;
-			targetProxy = DF11A569E39DC891615AD1419106A55E /* PBXContainerItemProxy */;
-		};
-		BC7EE88F4EF642F5A58CD08148CD9586 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-SimpleWebRTC";
-			target = F7F1371E87E8F9E8A9564CD48E543888 /* Pods-SimpleWebRTC */;
-			targetProxy = A5D957FA8E1054F5A042E21054FF182A /* PBXContainerItemProxy */;
+			targetProxy = 2E83B671672B1ED9EE3F403AA9260BB8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		257497152829C177993B5EC99C1D227A /* Release */ = {
+		039E47E8C9F1DAFA64F10A3ABE578A76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6951F9CC4BF80258A4E9D2F6A52E7C3C /* Pods-SimpleWebRTCUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SimpleWebRTCUITests/Pods-SimpleWebRTCUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SimpleWebRTCUITests/Pods-SimpleWebRTCUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		21EC4EE06E65694B45377182EAFF4DAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94AB0F214BCA26D42B117EAEEE1F8091 /* Pods-SimpleWebRTC.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SimpleWebRTC/Pods-SimpleWebRTC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SimpleWebRTC/Pods-SimpleWebRTC.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4533E45C418FF84C4FF3D9C5CF8B7E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71FB4A6C58424143DC761F5548B3DBF2 /* Pods-SimpleWebRTC.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SimpleWebRTC/Pods-SimpleWebRTC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SimpleWebRTC/Pods-SimpleWebRTC.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4D44591F5BAA32276F417E76DC12E49F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 822AEB663812D86A4F0DF9F2206F377D /* Pods-SimpleWebRTCUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SimpleWebRTCUITests/Pods-SimpleWebRTCUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SimpleWebRTCUITests/Pods-SimpleWebRTCUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EEDE382DB129115564D3F8D5E18AC69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A0B7D439B81AAF110C14562A8D7CE1A /* Starscream.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -583,6 +709,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -617,180 +744,12 @@
 			};
 			name = Release;
 		};
-		3E06D9461032CC4CE41B933D8A6B717A /* Release */ = {
+		9B002220D25C5CB6210A92350CD24D6E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BED1E1C302159BF85645B14EB9EF99F1 /* Starscream.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
-				PRODUCT_MODULE_NAME = Starscream;
-				PRODUCT_NAME = Starscream;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4209E3816BF1F1CF4D01C1C327C8F056 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94AB0F214BCA26D42B117EAEEE1F8091 /* Pods-SimpleWebRTC.release.xcconfig */;
+			baseConfigurationReference = 342C601E24D883DCD9755D9A41CC6068 /* Pods-SimpleWebRTCTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SimpleWebRTC/Pods-SimpleWebRTC-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SimpleWebRTC/Pods-SimpleWebRTC.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		511CE8D2C675AEB3E4FB2B1CA5A91C09 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2EFA901FAA8ED4F45DDAD886684DAE6 /* Starscream.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
-				PRODUCT_MODULE_NAME = Starscream;
-				PRODUCT_NAME = Starscream;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5EE1BE1FCB7223B4BC5B0AB52E9EC65E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6951F9CC4BF80258A4E9D2F6A52E7C3C /* Pods-SimpleWebRTCUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SimpleWebRTCUITests/Pods-SimpleWebRTCUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SimpleWebRTCUITests/Pods-SimpleWebRTCUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		67B9A365C959242544AF772BDA14CA8A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 498AE9F2E06292E4E930A78020E149B3 /* GoogleWebRTC.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		8BEEFFC9123D5561DF670F51FE0F90F9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DD3775D36416DAA783AEA44EF5341C6 /* Pods-SimpleWebRTCTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -817,70 +776,17 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		B27CBAFD677FB761E4BA83717BCA48C6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 822AEB663812D86A4F0DF9F2206F377D /* Pods-SimpleWebRTCUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SimpleWebRTCUITests/Pods-SimpleWebRTCUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SimpleWebRTCUITests/Pods-SimpleWebRTCUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B321C6506D33D3CC2FA3C7F1A6A2C162 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68B12DD9617A4D3470F98387AE60C145 /* GoogleWebRTC.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -903,6 +809,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -941,51 +848,12 @@
 			};
 			name = Debug;
 		};
-		E726AE4FD5500BD09DE0DB250AE6A160 /* Debug */ = {
+		B7D13AAB71529156FA1F2ACCAC8BEA58 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71FB4A6C58424143DC761F5548B3DBF2 /* Pods-SimpleWebRTC.debug.xcconfig */;
+			baseConfigurationReference = 0DD3775D36416DAA783AEA44EF5341C6 /* Pods-SimpleWebRTCTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SimpleWebRTC/Pods-SimpleWebRTC-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SimpleWebRTC/Pods-SimpleWebRTC.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EF5CC4030BB6864349005F27B50CAEEE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 342C601E24D883DCD9755D9A41CC6068 /* Pods-SimpleWebRTCTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1012,6 +880,40 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F20218FA17176CE739BB8EF4BAFC090A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E63A7F2D8B4DA51D2907CBD374D6EF7C /* Starscream.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1021,20 +923,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1862D0FEBE7B3437A2B0337575D850BD /* Build configuration list for PBXNativeTarget "Pods-SimpleWebRTCUITests" */ = {
+		14D7B821FD04F6513C0EFC8A1351C0C1 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B27CBAFD677FB761E4BA83717BCA48C6 /* Debug */,
-				5EE1BE1FCB7223B4BC5B0AB52E9EC65E /* Release */,
+				7EEDE382DB129115564D3F8D5E18AC69 /* Debug */,
+				F20218FA17176CE739BB8EF4BAFC090A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18B664D4DBF22B3F6B271154516833C2 /* Build configuration list for PBXAggregateTarget "GoogleWebRTC" */ = {
+		2E0E1C4880F01F1C5FA1863E1EFC8C21 /* Build configuration list for PBXNativeTarget "Pods-SimpleWebRTCTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B321C6506D33D3CC2FA3C7F1A6A2C162 /* Debug */,
-				67B9A365C959242544AF772BDA14CA8A /* Release */,
+				B7D13AAB71529156FA1F2ACCAC8BEA58 /* Debug */,
+				9B002220D25C5CB6210A92350CD24D6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1042,35 +944,26 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
-				257497152829C177993B5EC99C1D227A /* Release */,
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5ACF19E04FC59006BC686ED88AFE864F /* Build configuration list for PBXNativeTarget "Pods-SimpleWebRTCTests" */ = {
+		A4B1815336F5C1B1985EA8B28DEAF1E4 /* Build configuration list for PBXNativeTarget "Pods-SimpleWebRTCUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BEEFFC9123D5561DF670F51FE0F90F9 /* Debug */,
-				EF5CC4030BB6864349005F27B50CAEEE /* Release */,
+				4D44591F5BAA32276F417E76DC12E49F /* Debug */,
+				039E47E8C9F1DAFA64F10A3ABE578A76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E080C644BE62EDB427E0591AF7E6FCDF /* Build configuration list for PBXNativeTarget "Pods-SimpleWebRTC" */ = {
+		DB3D65F08CE495EFE4933C66A020E3B8 /* Build configuration list for PBXNativeTarget "Pods-SimpleWebRTC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E726AE4FD5500BD09DE0DB250AE6A160 /* Debug */,
-				4209E3816BF1F1CF4D01C1C327C8F056 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ED5C15C705AB67930733A7E237A0A33A /* Build configuration list for PBXNativeTarget "Starscream" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				511CE8D2C675AEB3E4FB2B1CA5A91C09 /* Debug */,
-				3E06D9461032CC4CE41B933D8A6B717A /* Release */,
+				4533E45C418FF84C4FF3D9C5CF8B7E39 /* Debug */,
+				21EC4EE06E65694B45377182EAFF4DAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

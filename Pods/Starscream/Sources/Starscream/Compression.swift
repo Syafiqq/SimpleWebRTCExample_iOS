@@ -142,7 +142,7 @@ class Compressor {
             strm.avail_in = CUnsignedInt(data.count)
 
             repeat {
-                strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                strm.next_out =     UnsafeMutablePointer<UInt8>(&buffer)
                 strm.avail_out = CUnsignedInt(buffer.count)
 
                 res = deflate(&strm, Z_SYNC_FLUSH)
