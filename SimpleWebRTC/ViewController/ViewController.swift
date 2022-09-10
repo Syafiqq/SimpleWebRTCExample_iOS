@@ -261,8 +261,19 @@ class ViewController: UIViewController, WebSocketDelegate, WebRTCClientDelegate,
     }
     
     private func sendCandidate(iceCandidate: RTCIceCandidate){
-        let candidate = Candidate.init(sdp: iceCandidate.sdp, sdpMLineIndex: iceCandidate.sdpMLineIndex, sdpMid: iceCandidate.sdpMid!)
-        let signalingMessage = SignalingMessage.init(type: "candidate", sessionDescription: nil, candidate: candidate)
+        let candidate = SDP(
+                sdp: nil,
+                type: nil,
+                sdpMLineIndex: iceCandidate.sdpMLineIndex,
+                sdpMid: iceCandidate.sdpMid,
+                candidate: iceCandidate.sdp,
+                userFragment: nil
+        )
+        let signalingMessage = SignalingMessage.init(
+                message_type: "CANDIDATE",
+                content: candidate,
+                code: code
+        )
         do {
             let data = try JSONEncoder().encode(signalingMessage)
             let message = String(data: data, encoding: String.Encoding.utf8)!
