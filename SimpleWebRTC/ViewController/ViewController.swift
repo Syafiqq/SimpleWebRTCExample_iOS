@@ -11,6 +11,40 @@ import Starscream
 import WebRTC
 import UIKit
 
+struct VStreamInfo: Codable {
+    var applicationName: String?
+    var streamName: String?
+    var sessionId: String?
+}
+
+struct VSdp: Codable {
+    var type: String?
+    var sdp: String?
+}
+
+struct VIceCandidate: Codable {
+    var candidate: String?
+    var sdpMid: String?
+    var sdpMLineIndex: Int?
+}
+
+struct VResponse: Codable {
+    var status: Int?
+    var statusDescription: String?
+    var direction: String?
+    var command: String?
+    var streamInfo: VStreamInfo?
+    var sdp: VSdp?
+    var iceCandidates: [VIceCandidate]?
+}
+
+struct VRequest: Codable {
+    var direction: String?
+    var command: String?
+    var streamInfo: VStreamInfo?
+    var sdp: VSdp?
+}
+
 class ViewController: UIViewController, WebSocketDelegate, WebRTCClientDelegate, CameraSessionDelegate {
     
     enum messageType {
@@ -30,6 +64,7 @@ class ViewController: UIViewController, WebSocketDelegate, WebRTCClientDelegate,
     //MARK: - Properties
     var webRTCClient: WebRTCClient!
     var socket: WebSocket!
+    var streamInfo: VStreamInfo!
     var tryToConnectWebSocket: Timer!
     var cameraSession: CameraSession?
     
@@ -77,6 +112,12 @@ class ViewController: UIViewController, WebSocketDelegate, WebRTCClientDelegate,
         // socket = WebSocket(url: URL(string: "ws://webrtc.staging.geniebook.dev:8080/")!)
         socket = WebSocket(url: URL(string: "wss://stream-vm.dev.geniebook.dev:444/webrtc-session.json")!)
         socket.delegate = self
+
+        streamInfo = VStreamInfo(
+                applicationName: "online_lesson",
+                streamName: "2048300000006196",
+                sessionId: "[empty]"
+        )
 
         tryToConnectWebSocket = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { (timer) in
             if self.webRTCClient.isConnected || self.socket.isConnected {
@@ -180,7 +221,7 @@ class ViewController: UIViewController, WebSocketDelegate, WebRTCClientDelegate,
         if !webRTCClient.isConnected {
             code = randomString(length: 10)
             webRTCClient.connect(onSuccess: { (offerSDP: RTCSessionDescription) -> Void in
-                self.sendSDP(sessionDescription: offerSDP)
+                self.offerSdp()
             })
         }
     }
@@ -227,58 +268,39 @@ class ViewController: UIViewController, WebSocketDelegate, WebRTCClientDelegate,
     }
     
     // MARK: - WebRTC Signaling
-    private func sendSDP(sessionDescription: RTCSessionDescription){
-        var type = ""
-        if sessionDescription.type == .offer {
-            type = "offer"
-        }else if sessionDescription.type == .answer {
-            type = "answer"
-        }
-        
-        let sdp = SDP(
-                sdp: sessionDescription.sdp,
-                type: type,
-                sdpMLineIndex: nil,
-                sdpMid: nil,
-                candidate: nil,
-                userFragment: nil
-        )
-        let signalingMessage = SignalingMessage(
-                message_type: "SDP",
-                content: sdp,
-                code:code
+    func offerSdp() {
+        let request = VRequest(
+                direction: "play",
+                command: "getOffer",
+                streamInfo: streamInfo,
+                sdp: nil
         )
         do {
-            let data = try JSONEncoder().encode(signalingMessage)
+            let data = try JSONEncoder().encode(request)
             let message = String(data: data, encoding: String.Encoding.utf8)!
-            
+
             if self.socket.isConnected {
+                print("CurrentLog - sendSdp - \(message)")
                 self.socket.write(string: message)
             }
         }catch{
             print(error)
         }
     }
-    
-    private func sendCandidate(iceCandidate: RTCIceCandidate){
-        let candidate = SDP(
-                sdp: nil,
-                type: nil,
-                sdpMLineIndex: Int(iceCandidate.sdpMLineIndex),
-                sdpMid: iceCandidate.sdpMid,
-                candidate: iceCandidate.sdp,
-                userFragment: nil
-        )
-        let signalingMessage = SignalingMessage.init(
-                message_type: "CANDIDATE",
-                content: candidate,
-                code: code
+
+    func answerSdp(answerSDP: RTCSessionDescription) {
+        let request = VRequest(
+                direction: "play",
+                command: "sendResponse",
+                streamInfo: streamInfo,
+                sdp: VSdp(type: "answer", sdp: answerSDP.sdp)
         )
         do {
-            let data = try JSONEncoder().encode(signalingMessage)
+            let data = try JSONEncoder().encode(request)
             let message = String(data: data, encoding: String.Encoding.utf8)!
-            
+
             if self.socket.isConnected {
+                print("CurrentLog - sendSdp - \(message)")
                 self.socket.write(string: message)
             }
         }catch{
@@ -307,29 +329,39 @@ extension ViewController {
         print("CurrentLog - websocketDidReceiveMessage - \(text) - \(socket)")
         
         do{
-            let signalingClient = try JSONDecoder().decode(SignalingClient.self, from: text.data(using: .utf8)!)
-            let signalingMessage = signalingClient.text
+            let msgJSON = try JSONDecoder().decode(VResponse.self, from: text.data(using: .utf8)!)
 
-            if signalingMessage?.message_type == "CANDIDATE",
-               let content = signalingMessage?.content {
-                print("CurrentLog - candidate")
-                webRTCClient.receiveCandidate(candidate: RTCIceCandidate(sdp: content.candidate ?? "", sdpMLineIndex: Int32(content.sdpMLineIndex ?? 0), sdpMid: content.sdpMid))
-            } else if signalingMessage?.message_type == "SDP",
-                   let content = signalingMessage?.content {
-                if content.type == "offer" {
-                    print("CurrentLog - offer")
-                    webRTCClient.receiveOffer(offerSDP: RTCSessionDescription(type: .offer, sdp: (content.sdp)!), onCreateAnswer: {(answerSDP: RTCSessionDescription) -> Void in
-                        self.sendSDP(sessionDescription: answerSDP)
-                    })
-                } else  if content.type == "answer" {
-                    print("CurrentLog - answer")
-                    webRTCClient.receiveAnswer(answerSDP: RTCSessionDescription(type: .answer, sdp: (content.sdp)!))
+            let msgStatus = msgJSON.status
+            let msgCommand = msgJSON.command
+            if msgStatus == 514 {
+            } else if msgStatus != 200 {
+            } else {
+                let streamInfoResponse = msgJSON.streamInfo
+                if let streamInfoResponse = streamInfoResponse {
+                    streamInfo = streamInfoResponse
+                }
+
+                let sdpData = msgJSON.sdp
+                if let sdpData = sdpData {
+                    webRTCClient.receiveOffer(
+                            offerSDP: RTCSessionDescription(type: .offer, sdp: sdpData.sdp!),
+                            onCreateAnswer: {(answerSDP: RTCSessionDescription) -> Void in
+                                self.answerSdp(answerSDP:answerSDP)
+                            })
+                }
+
+                let icCandidates = msgJSON.iceCandidates
+                if let icCandidates = icCandidates {
+                    for icCandidate in icCandidates {
+                        webRTCClient.receiveCandidate(candidate: RTCIceCandidate(sdp: icCandidate.candidate ?? "", sdpMLineIndex: Int32(icCandidate.sdpMLineIndex ?? 0), sdpMid: icCandidate.sdpMid))
+                    }
                 }
             }
-        }catch{
+
+        }
+        catch{
             print(error)
         }
-        
     }
     
     func websocketDidReceiveData(socket: WebSocketClient, data: Data) { }
@@ -338,7 +370,7 @@ extension ViewController {
 // MARK: - WebRTCClient Delegate
 extension ViewController {
     func didGenerateCandidate(iceCandidate: RTCIceCandidate) {
-        self.sendCandidate(iceCandidate: iceCandidate)
+        // self.sendCandidate(iceCandidate: iceCandidate)
     }
     
     func didIceConnectionStateChanged(iceConnectionState: RTCIceConnectionState) {

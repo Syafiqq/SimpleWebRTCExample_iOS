@@ -34,23 +34,3 @@ struct Candidate: Codable {
     let sdpMid: String
 }
 */
-
-struct SignalingClient: Codable {
-    var client: Int?
-    var text: SignalingMessage?
-}
-
-struct SignalingMessage: Codable {
-    var message_type: String?
-    var content: SDP?
-    var code: String?
-}
-
-struct SDP: Codable {
-    var sdp: String?
-    var type: String?
-    var sdpMLineIndex: Int?
-    var sdpMid: String?
-    var candidate: String?
-    var userFragment: String?
-}

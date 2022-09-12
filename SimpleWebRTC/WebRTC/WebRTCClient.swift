@@ -136,19 +136,6 @@ class WebRTCClient: NSObject, RTCPeerConnectionDelegate, RTCVideoViewDelegate, R
     // MARK: Signaling Event
     func receiveOffer(offerSDP: RTCSessionDescription, onCreateAnswer: @escaping (RTCSessionDescription) -> Void){
         if(self.peerConnection == nil){
-            print("CurrentLog - offer received, create peerconnection")
-            self.peerConnection = setupPeerConnection()
-            self.peerConnection!.delegate = self
-            if self.channels.video {
-                self.peerConnection!.add(localVideoTrack, streamIds: ["stream-0"])
-            }
-            if self.channels.audio {
-                self.peerConnection!.add(localAudioTrack, streamIds: ["stream-0"])
-            }
-            if self.channels.datachannel {
-                self.dataChannel = self.setupDataChannel()
-                self.dataChannel?.delegate = self
-            }
             
         }
         
@@ -337,7 +324,7 @@ class WebRTCClient: NSObject, RTCPeerConnectionDelegate, RTCVideoViewDelegate, R
             
             if let offerSDP = sdp {
                 print("CurrentLog - make offer, created local sdp")
-                self.peerConnection!.setLocalDescription(offerSDP, completionHandler: { (err) in
+                /*self.peerConnection!.setLocalDescription(offerSDP, completionHandler: { (err) in
                     if let error = err {
                         print("CurrentLog - error with set local offer sdp")
                         print(error)
@@ -345,7 +332,8 @@ class WebRTCClient: NSObject, RTCPeerConnectionDelegate, RTCVideoViewDelegate, R
                     }
                     print("CurrentLog - succeed to set local offer SDP")
                     onSuccess(offerSDP)
-                })
+                })*/
+                onSuccess(offerSDP)
             }
             
         }
